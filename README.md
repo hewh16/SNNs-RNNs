@@ -2,7 +2,7 @@
 
 ![Neural Models](figs/neuralModels.png)  
 
-**The repository is in process, not the final version.**
+**Note: The repository is in process, not the final version.**
 
 This repository contains the code associated with [Comparing SNNs and RNNs on neuromorphic vision datasets: Similarities and differences](https://arxiv.org/abs/2005.02183). This code has most recently been tested with Python 3.7 and Pytorch 1.1.0.
 
