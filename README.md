@@ -2,7 +2,9 @@
 
 ![Neural Models](figs/neuralModels.png)  
 
-This repository contains the code associated with Comparing SNNs and RNNs on neuromorphic vision datasets: Similarities and differences. This code has most recently been tested with Python 3.7 and Pytorch 1.1.0.
+**The repository is in process, not the final version.**
+
+This repository contains the code associated with [Comparing SNNs and RNNs on neuromorphic vision datasets: Similarities and differences](https://arxiv.org/abs/2005.02183). This code has most recently been tested with Python 3.7 and Pytorch 1.1.0.
 
 ## Introduction
 Neuromorphic data, recording frameless spike events, have attracted considerable attention for the spatiotemporal information components and the event-driven processing fashion. Spiking neural networks (SNNs) represent a family of event-driven models with spatiotemporal dynamics for neuromorphic computing, which are widely benchmarked on neuromorphic data. Interestingly, researchers in the machine learning community can argue that recurrent (artificial) neural networks (RNNs) also have the capability to extract spatiotemporal features although they are not event-driven. Thus, the question of ‘‘what will happen if we benchmark these two kinds of models together on neuromorphic data’’ comes out but remains unclear.
