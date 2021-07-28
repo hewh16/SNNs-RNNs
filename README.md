@@ -23,9 +23,12 @@ If you find this code useful in your research, please consider citing:
 
 ```
 @article{he2020comparing,
-  title={Comparing SNNs and RNNs on Neuromorphic Vision Datasets: Similarities and Differences},
+  title={Comparing SNNs and RNNs on neuromorphic vision datasets: Similarities and differences},
   author={He, Weihua and Wu, YuJie and Deng, Lei and Li, Guoqi and Wang, Haoyu and Tian, Yang and Ding, Wei and Wang, Wenhui and Xie, Yuan},
-  journal={arXiv preprint arXiv:2005.02183},
-  year={2020}
+  journal={Neural Networks},
+  volume={132},
+  pages={108--120},
+  year={2020},
+  publisher={Elsevier}
 }
 ```
