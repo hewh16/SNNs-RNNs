@@ -11,6 +11,10 @@ Neuromorphic data, recording frameless spike events, have attracted considerable
 
 In this work, we make a systematic study to compare SNNs and RNNs on neuromorphic data, taking the vision datasets as a case study. First, we identify the similarities and differences between SNNs and RNNs (including the vanilla RNNs and LSTM) from the modeling and learning perspectives. To improve comparability and fairness, we unify the supervised learning algorithm based on backpropagation through time (BPTT), the loss function exploiting the outputs at all timesteps, the network structure with stacked fully-connected or convolutional layers, and the hyper-parameters during training. Especially, given the mainstream loss function used in RNNs, we modify it inspired by the rate coding scheme to approach that of SNNs. Furthermore, we tune the temporal resolution of datasets to test model robustness and generalization. At last, a series of contrast experiments are conducted on two types of neuromorphic datasets: DVS-converted (N-MNIST) and DVS-captured (DVS Gesture). Extensive insights regarding recognition accuracy, feature extraction, temporal resolution and contrast, learning generalization, computational complexity and parameter volume are provided, which are beneficial for the model selection on different workloads and even for the invention of novel neural models in the future.
 
+## Usage and Datasets
+
+We provide N-MNIST dataset by [google drive](https://drive.google.com/drive/folders/1UvOFPKMSkL6BEuEVmr_NBfVuJW8vWDWY?usp=sharing). As for dvs-gesture dataset, please download from [ibm link](https://ibm.ent.box.com/s/3hiq58ww1pbbjrinh367ykfdf60xsfm8).
+
 ## Citations
 
 If you find this code useful in your research, please consider citing:
