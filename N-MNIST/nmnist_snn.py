@@ -87,25 +87,18 @@ class SNN_Model(nn.Module):
 
             x = input[:, :, :, :, step].view(batch_size, -1)
 
-            h1_mem, h1_spike = mem_update_withoutLateral(self.fc1, x, h1_mem, h1_spike)
+            h1_mem, h1_spike = mem_update(self.fc1, x, h1_mem, h1_spike)
             h1_sumspike = h1_sumspike + h1_spike
 
-            h2_mem, h2_spike = mem_update_withoutLateral(self.fc2, h1_spike, h2_mem, h2_spike)
+            h2_mem, h2_spike = mem_update(self.fc2, h1_spike, h2_mem, h2_spike)
             h2_sumspike = h2_sumspike + h2_spike
 
         outputs = h2_sumspike / time_window
         # print(torch.mean(outputs,dim=0))
         return outputs
 
-
-def mem_update(fc, lateral, x, mem, spike):
-    lateral.weight = torch.mul(lateral.weight, thans)
-    mem = mem * decay * (1 - spike) + fc(x) + 0.3 * lateral(spike)
-    spike = act_fun(mem)
-    return mem, spike
-
-def mem_update_withoutLateral(fc, x, mem, spike):
-
+def mem_update(fc, x, mem, spike):
+  
     mem = mem * decay * (1 - spike) + fc(x)
     spike = act_fun(mem)
     return mem, spike
